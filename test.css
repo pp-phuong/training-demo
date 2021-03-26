@@ -1,0 +1,23 @@
+
+:root {
+  --background-color : rgb(97, 187, 190); 
+  --content-color : rgb(29, 40, 41); 
+  --color-theme-1 : black;
+  --color-theme-2 : yellow;
+  --color-black-100 : rgb(65, 62, 62);
+  --color-black-200 : rgb(43, 42, 42);
+  --color-black-300 : rgb(8, 8, 8);
+}
+.container {
+  background-color: var(--content-color) ;
+}
+.heading-1 {
+  color: var(--background-color) ;
+}
+
+.heading-2 {
+  color: var(--background-color) ;
+}
+.heading-3 {
+  color: var(--background-color) ;
+}

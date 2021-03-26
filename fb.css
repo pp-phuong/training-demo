@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+li {
+  list-style-type: none;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #242526;
+  color: #7d7f83;
+  height: 60px;
+  border: 1px solid #292a2b;
+  z-index: 100;
+}
+.nav-search {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+}
+.nav-notice {
+  display: flex;
+  justify-content: space-between;
+}
+.introduction {
+  background-color: #242526;
+  text-align: center;
+}
+.cover {
+  background-color: #18191a;
+  position: relative;
+  margin: 0 15%;
+  height: 348px;
+  border-radius: 10px;
+}
+.avatar {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 50%;
+  width: 168px;
+  height: 168px;
+  object-fit: cover;
+  border: 1px solid #3a413f;
+}
+.camera-avatar {
+  z-index: 0;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  right: calc(50% - 68px);
+  color: #fff;
+  background-color: rgb(197, 192, 192);
+  opacity: 0.5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.camera-avatar > i {
+  z-index: 10;
+}
+.add-cover-btn {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: #e4e6eb;
+  background-color: #2b2b2c;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  
+}
+
+.name {
+  font-size: 32px;
+  color: #e4e6eb;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.des {
+  font-size: 17px;
+  color: #b0b3b8;
+}
+.edit {
+  font-size: 15px;
+  color: #2e89ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.sub-navbar {
+  border-top: 1px solid #3a413f;
+  margin: 10px 15%;
+  height: 60px;
+  color: #b0b3b8;
+}
+.left {
+  float: left;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  
+}
+.left > li {
+  padding: 10px 16px;
+  cursor: pointer;
+}
+.right {
+  float: right;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.right > li {
+  padding: 10px 14px;
+  margin: 0 3px;
+  border-radius: 5px;
+  background-color: #3a3b3c;
+  cursor: pointer;
+}

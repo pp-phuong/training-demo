@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <style>
+      .container {
+        position: relative;
+        width: 25%;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 5px;
+      }
+      .bg {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        animation-delay: 1s;
+        transition: all ease-in 0.7s;
+      }
+      .box-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+      .icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid white;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        cursor: pointer;
+      }
+      .icon:hover {
+        color:rgb(254, 254, 255);
+      }
+      .container:hover .box-icon {
+        background-color: rgba(0,0,0,0.6);
+        z-index: 0;
+      }
+      .container:hover .icon {
+        opacity: 1;
+        z-index: 3;
+      }
+      .container:hover .bg {
+        transform: scale(1.2);
+    
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="bg" src="/images/background.JPG" alt="" srcset="">
+      <div class="box-icon">
+        <div class="icon" title="hello" >
+          <i class="fas fa-play"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

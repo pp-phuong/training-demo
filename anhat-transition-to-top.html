@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+      }
+      .box {
+        width: 80%;
+        height: 50px;
+        /* overflow: hidden; */
+      }
+      .btn {
+        width: 50px;
+        height: 50px;
+      }
+      .box-1 {
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        transition: all 1s linear;
+      }
+      .box-2 {
+        background-color: brown;
+      }
+      .box-3 {
+        background-color: azure;
+      }
+      .box-4 {
+        background-color: cadetblue;
+      }
+      .content {
+        height: 100px;
+        width: 80%;
+        transform: translateY(100%);
+        background-color: cadetblue;
+        transition: all 1s linear;
+        z-index: 3;
+      }
+      .content-hid {
+        height: 100px;
+        width: 80%;
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        left: 50px;
+        z-index: 0;
+        transition: all 1s linear;
+      }
+      @keyframes run {
+        from {
+          transform: translateY(100%);
+          display: none;
+        }
+        to {
+          transform: translateY(0);
+          display: block;
+        }
+      }
+      .box-1:hover .content-hid {
+        opacity: 1;
+      }
+      .box-1:hover {
+        height: auto;
+      }
+      .box-1:hover .content {
+        animation: run 1s ease-in-out;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-1">
+        <button class="btn">1</button>
+        <div class="content-hid">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
+          sapiente maiores officiis quia quo illum eos, corrupti ipsa modi,
+          provident minima, consequuntur non sit amet reprehenderit vitae.
+          Voluptatibus, excepturi quis.
+        </div>
+        <div class="content">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
+          sapiente maiores officiis quia quo illum eos, corrupti ipsa modi,
+          provident minima, consequuntur non sit amet reprehenderit vitae.
+          Voluptatibus, excepturi quis.
+        </div>
+      </div>
+
+      <div class="box box-2">
+        <button class="btn">2</button>
+      </div>
+      <div class="box box-3">
+        <button class="btn">3</button>
+      </div>
+      <div class="box box-4">
+        <button class="btn">4</button>
+      </div>
+    </div>
+  </body>
+</html>

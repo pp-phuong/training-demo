@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .icon {
+            width: 100px;
+            height: 100px;
+            background-color: violet;
+            animation: icon 2s infinite ease-in-out;
+        }
+        .test {
+            width: 100px;
+            height: 100px;
+            background-color: violet;
+            
+            animation: test 2s infinite ease-in-out;
+        }
+        @keyframes test {
+            from {
+                transform: rotateX(-180deg) rotateY(0);
+            }
+            to {
+                transform: rotateX(-180deg) rotateY(-180deg);
+            }
+        }
+        @keyframes icon {
+         0% {
+             transform: perspective(150px) rotateX(0) rotateY(0);
+         }
+         50% {
+             transform: perspective(150px) rotateX(-180deg) rotateY(0deg);
+         }
+         100% {
+             transform: perspective(150px) rotateX(-180deg) rotateY(-180deg);
+         }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="icon">
+
+        </div>
+     
+    </div>
+
+</body>
+</html>

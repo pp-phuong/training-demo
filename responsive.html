@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-around;
+        height: 100px;
+        flex-wrap: wrap;
+      }
+      .box-1 {
+        background-color: aqua;
+        width: 20%;
+      }
+      .box-2 {
+        background-color: rgb(243, 142, 198);
+        width: 50%;
+      }
+      .box-3 {
+        background-color: rgb(176, 240, 92);
+        width: 20%;
+      }
+      @media screen and (max-width: 1024px) {
+        .box-1 {
+          width: 50%;
+        }
+        .box-2 {
+          width: 50%;
+        }
+        .box-3 {
+          width: 100%;
+        }
+      }
+      @media screen and (max-width: 750px) {
+        .box-1 {
+          width: 100%;
+        }
+        .box-2 {
+          width: 100%;
+        }
+        .box-3 {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box-1">1</div>
+      <div class="box-2">2</div>
+      <div class="box-3">3</div>
+    </div>
+    <div class="container">
+      <div class="box-1">1</div>
+      <div class="box-2">2</div>
+      <div class="box-3">3</div>
+    </div>
+  </body>
+</html>

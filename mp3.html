@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <style>
+      .container {
+        position: relative;
+        width: 25%;
+        height: 300px;
+        background-size: 100%;
+        background-image: url(/images/background.JPG);
+        animation-duration: 3s;
+      }
+      .bg {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+      .box-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+      .icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid white;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+      }
+      .container:hover .icon {
+        opacity: 1;
+      }
+      .container:hover {
+        background: linear-gradient(
+            rgba(34, 28, 28, 0.45),
+            rgba(48, 42, 42, 0.45)
+          ), url(/images/background.JPG);
+          animation-name: zoom-img;
+      }
+      @keyframes zoom-img {
+        from {
+          background-size: 100%;
+        }
+        90% {
+          background-size: 109%;
+        }
+        to {
+
+        background-size: 109%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box-icon">
+        <div class="icon">
+          <i class="fas fa-play"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- https://css-tricks.com/css-basics-using-multiple-backgrounds/ -->
